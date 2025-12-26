@@ -1,0 +1,44 @@
+.origin {
+    position: absolute;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.x-axis-container, .y-axis-container{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+}
+
+.x-axis-container{
+    width: calc(100% - 40px);
+    height: 2px;
+    justify-content: right;
+}
+
+.y-axis-container{
+    transform: rotate(90deg); 
+    width: calc(100vh - 40px);
+    height: 2px;
+}
+
+.x-axis, .y-axis{
+    position: absolute;
+
+    border: 1px solid grey;
+    width: calc(100% - 20px);
+}
+
+.x-axis{ right: 2px; }
+.y-axis{ left: 2px; }
+
+.x-axis-arrow, .y-axis-arrow{
+    position: absolute;
+
+    color: rgb(0, 0, 0, 60%);
+    font-size: 45px;
+    font-weight: bold;
+}
+
+
