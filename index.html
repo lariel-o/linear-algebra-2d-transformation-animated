@@ -1,27 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <title> Qualquer coisa </title>
+        <title> linear algebra 2d animation</title>
         <meta charset="UTF-8">
 
 
         <link rel="stylesheet" href="./public/css/main.css">
         <link rel="stylesheet" href="./public/css/axis.css">
+        <link rel="stylesheet" href="./public/css/inputs.css">
     </head>
     <body>
         <div class="container">
+            <header>
+                <p>Just write something</p>
+            </header>
             <main>
-                <div class="origin"></div>
-                <div class="x-axis-container">
-                    <span class="x-axis"></span>
-                    <span class="x-axis-arrow">&gt</span>
-                </div>
-                <div class="y-axis-container">
-                    <span class="y-axis"></span>
-                    <span class="y-axis-arrow">&lt</span>
-                </div>
+                <section class="axis-container">
+                    <span class="origin"></span>
+                    <div class="x-axis-container">
+                        <span class="x-axis"></span>
+                        <span class="x-axis-arrow">&gt</span>
+                    </div>
+                    <div class="y-axis-container">
+                        <span class="y-axis"></span>
+                        <span class="y-axis-arrow">&lt</span>
+                    </div>
+                </section>
+                <section class="inputs-container">
+                    <form>
+                        <section class="twod-matrix-section">
+                            <section class="twod-matrix-container">
+                                <input type="number" name="i_in_x" value="">
+                                <input type="number" name="i_in_y" value="">
+                                <input type="number" name="j_in_x" value="">
+                                <input type="number" name="j_in_y" value="">
+                            </section>
+                            <section class="text">
+                                <p>Transformation matrix</p>
+                            </section>
+                        </section>
+
+                        <section class="animation-section">
+                            <section class="text">
+                                <p>Animation type</p>
+                            </section>
+                            <input type="radio" name="animation">
+                            <input type="radio" name="animation">
+                        </section>
+
+                        <section class="input">
+                            <input type="button" name="submit" value="See animation">
+                        </section>
+                    </form>
+                </section>
             </main>
-        </div>
+        </span>
     </body>
 </html>
 

@@ -1,3 +1,12 @@
+.axis-container{
+    width: var(--axis-container-width);
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .origin {
     position: absolute;
     border: 5px solid black;
@@ -12,14 +21,14 @@
 }
 
 .x-axis-container{
-    width: calc(100% - 40px);
+    width: calc(var(--axis-container-width) - 15%);
     height: 2px;
     justify-content: right;
 }
 
 .y-axis-container{
     transform: rotate(90deg); 
-    width: calc(100vh - 40px);
+    width: calc(100vh - 90px);
     height: 2px;
 }
 
@@ -36,7 +45,7 @@
 .x-axis-arrow, .y-axis-arrow{
     position: absolute;
 
-    color: rgb(0, 0, 0, 60%);
+    color: rgb(0, 0, 0, 50%);
     font-size: 45px;
     font-weight: bold;
 }
