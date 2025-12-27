@@ -1,5 +1,5 @@
-.axis-container{
-    width: var(--axis-container-width);
+.axis-section{
+    width: 65%;
     height: 100%;
 
     display: flex;
@@ -7,47 +7,22 @@
     align-items: center;
 }
 
-.origin {
-    position: absolute;
+.origin{
     border: 5px solid black;
-    border-radius: 10px;
-}
-
-.x-axis-container, .y-axis-container{
+    border-radius: 50%;
     position: absolute;
-
-    display: flex;
-    align-items: center;
 }
 
-.x-axis-container{
-    width: calc(var(--axis-container-width) - 15%);
-    height: 2px;
-    justify-content: right;
-}
+.axis{
+    width: calc(65% - 20px);
+    height: 0;
 
-.y-axis-container{
-    transform: rotate(90deg); 
-    width: calc(100vh - 90px);
-    height: 2px;
-}
-
-.x-axis, .y-axis{
     position: absolute;
-
-    border: 1px solid grey;
-    width: calc(100% - 20px);
+    border-bottom: 1px solid rgb(128, 128, 128, 70%);
 }
 
-.x-axis{ right: 2px; }
-.y-axis{ left: 2px; }
-
-.x-axis-arrow, .y-axis-arrow{
-    position: absolute;
-
-    color: rgb(0, 0, 0, 50%);
-    font-size: 45px;
-    font-weight: bold;
+.y-axis{
+    width: calc(100vh - 70px);
+    transform: rotate(90deg);
 }
-
 

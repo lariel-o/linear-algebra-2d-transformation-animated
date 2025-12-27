@@ -5,51 +5,81 @@
         <meta charset="UTF-8">
 
 
+        <!-- import css files -->
         <link rel="stylesheet" href="./public/css/main.css">
         <link rel="stylesheet" href="./public/css/axis.css">
         <link rel="stylesheet" href="./public/css/inputs.css">
+
+        <!-- import bebas neue from google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <header>
-                <p>Just write something</p>
+            <header class="header">
+                <h1>Title</h1>
             </header>
-            <main>
-                <section class="axis-container">
+            <main class="main">
+                <section class="axis-section">
                     <span class="origin"></span>
-                    <div class="x-axis-container">
-                        <span class="x-axis"></span>
-                        <span class="x-axis-arrow">&gt</span>
-                    </div>
-                    <div class="y-axis-container">
-                        <span class="y-axis"></span>
-                        <span class="y-axis-arrow">&lt</span>
-                    </div>
+                    <span class="x-axis axis"></span>
+                    <span class="y-axis axis"></span>
+
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+                    <span class="axis default-grid default-grid-as-x"></span>
+
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
+                    <span class="axis default-grid default-grid-as-y"></span>
                 </section>
-                <section class="inputs-container">
+                <section class="inputs-section">
                     <form>
-                        <section class="twod-matrix-section">
-                            <section class="twod-matrix-container">
-                                <input type="number" name="i_in_x" value="">
-                                <input type="number" name="i_in_y" value="">
-                                <input type="number" name="j_in_x" value="">
-                                <input type="number" name="j_in_y" value="">
-                            </section>
-                            <section class="text">
-                                <p>Transformation matrix</p>
+                        <section>
+                            <p>Type the matrix transformation:</p>
+                            <section class="twod-matrix">
+                                <input type="number" min="-9" max="9">
+                                <input type="number" min="-9" max="9">
+                                <input type="number" min="-9" max="9">
+                                <input type="number" min="-9" max="9">
                             </section>
                         </section>
-
-                        <section class="animation-section">
-                            <section class="text">
-                                <p>Animation type</p>
-                            </section>
-                            <input type="radio" name="animation">
-                            <input type="radio" name="animation">
+                        <section class="twod-animation-type">
+                            <p>Animation type:</p>
+                            <input type="radio" name="animation-type" checked>
+                            <input type="radio" name="animation-type">
+                            <input type="radio" name="animation-type">
                         </section>
-
-                        <section class="input">
-                            <input type="button" name="submit" value="See animation">
+                        <section class="twod-submit">
+                            <input type="button" value="See animation">
+                        </section>
+                        <section class="background-type">
+                            <p>Background type:</p>
+                            <input type="radio" name="background-type" value="grid" checked>
+                            <input type="radio" name="background-type" value="points">
+                            <input type="radio" name="background-type" value="vectors">
                         </section>
                     </form>
                 </section>
