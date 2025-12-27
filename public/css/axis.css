@@ -21,8 +21,12 @@
     border-bottom: 1px solid rgb(128, 128, 128, 70%);
 }
 
-.y-axis{
+.y-axis, .default-grid-as-y{
     width: calc(100vh - 70px);
     transform: rotate(90deg);
+}
+
+.default-grid{
+    border-bottom: 2px solid rgb(0, 0, 0, 30%);
 }
 
